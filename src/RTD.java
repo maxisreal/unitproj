@@ -68,6 +68,9 @@ public class RTD {
                 }
                 System.out.println("g ");
             }
+        } else if (findValid(input)==1){
+            System.out.println("bubblegum, bubblegum, in a pot");
+            System.out.println("let it flow and watch it pop");
         }
     }
 }
