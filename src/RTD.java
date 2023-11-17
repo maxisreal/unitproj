@@ -4,7 +4,7 @@ public class RTD {
     public RTD(){}
     private int findValid(String input){
         input = input.substring(0, 1);
-        if (a.indexOf(input)!=-1&&input!=null){
+        if (a.indexOf(input) != -1){
             return a.indexOf(input);
         } else {
             return -1;
@@ -71,6 +71,13 @@ public class RTD {
         } else if (findValid(input)==1){
             System.out.println("bubblegum, bubblegum, in a pot");
             System.out.println("let it flow and watch it pop");
+            System.out.println("...");
+        } else if (findValid(input)==7){
+            System.out.println("damn im hungry. i could go for a barbeque bacon burger,");
+            System.out.println("large order of fries, orange soda with no ice, and a piece");
+            System.out.println("of hot apple pie.");
+        } else if (findValid(input)==2){
+            System.out.println("chicken");
         }
     }
 }
