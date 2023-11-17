@@ -78,6 +78,11 @@ public class RTD {
             System.out.println("of hot apple pie.");
         } else if (findValid(input)==2){
             System.out.println("chicken");
+        } else if (findValid(input)==12){
+            System.out.println("It's math time!");
+        } else if (findValid(input)==5){
+            System.out.println("It's time for egg delivery!");
+            System.out.println("Can you deliver 60 eggs?");
         }
     }
 }
