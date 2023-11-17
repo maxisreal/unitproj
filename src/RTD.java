@@ -1,8 +1,11 @@
 public class RTD {
     private final String a;
-    //lenght is 25
     public RTD(){
         a = "abcdefghijklmnopqrstuvwxyz";
+        //lenght is 25
+    }
+    public RTD(String aj){
+        a = aj;
     }
     private int findValid(String input){
         input = input.substring(0, 1);
