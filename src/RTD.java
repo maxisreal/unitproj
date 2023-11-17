@@ -1,7 +1,9 @@
 public class RTD {
-    private String a = "abcdefghijklmnopqrstuvwxyz";
+    private final String a;
     //lenght is 25
-    public RTD(){}
+    public RTD(){
+        a = "abcdefghijklmnopqrstuvwxyz";
+    }
     private int findValid(String input){
         input = input.substring(0, 1);
         if (a.contains(input)){
