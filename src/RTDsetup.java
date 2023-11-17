@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class RTDsetup {
-    Scanner scan = new Scanner(System.in);
+    private Scanner scan;
     public RTDsetup() {
-        //Scanner scan = new Scanner(System.in);
+        scan = new Scanner(System.in);
     }
     public void start() {
         RTD instance = new RTD();
