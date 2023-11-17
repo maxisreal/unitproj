@@ -4,7 +4,7 @@ public class RTD {
     public RTD(){}
     private int findValid(String input){
         input = input.substring(0, 1);
-        if (a.indexOf(input) != -1){
+        if (a.contains(input)){
             return a.indexOf(input);
         } else {
             return -1;
