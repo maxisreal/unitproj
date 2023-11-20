@@ -21,6 +21,7 @@ public class RTD {
     public boolean findValid(){
         return confirm.equals("r");
     }
+    //initialize returns a different thing for each letter of the alphabet
     public void initialize(String input){
         if (findValid(input)==0){
             //if user inputs a
