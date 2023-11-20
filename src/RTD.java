@@ -1,6 +1,6 @@
 public class RTD {
     private final String a;
-    private String confirm;
+    private final String confirm;
     public RTD() {
         a = "abcdefghijklmnopqrstuvwxyz";
         confirm = "r";
