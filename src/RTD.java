@@ -90,7 +90,9 @@ public class RTD {
         } else if (findValid(input)==2){
             System.out.println("chicken");
         } else if (findValid(input)==12){
-            System.out.println("It's math time!");
+            System.out.println("This output is dedicated to Munim Ali,");
+            System.out.println("because it's his favorite letter of the alphabet.");
+            System.out.println("He told me.");
         } else if (findValid(input)==5){
             System.out.println("It's time for egg delivery!");
             System.out.println("Can you deliver 60 eggs?");
