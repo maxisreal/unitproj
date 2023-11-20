@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class RTDsetup {
-    private Scanner scan;
+    private final Scanner scan;
     public RTDsetup() {
         scan = new Scanner(System.in);
     }
