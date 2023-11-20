@@ -1,16 +1,25 @@
 public class RTD {
     private final String a;
+    private String confirm;
     public RTD() {
         a = "abcdefghijklmnopqrstuvwxyz";
+        confirm = "r";
         //lenght is 25
+    }
+    public RTD(String b){
+        confirm = b;
+        a = "abcdefghijklmnopqrstuvwxyz";
     }
     private int findValid(String input){
         input = input.substring(0, 1);
         if (a.contains(input)){
             return a.indexOf(input);
         } else {
-            return -1;
+            return (int)(Math.random()*a.length()+1);
         }
+    }
+    public boolean findValid(){
+        return confirm.equals("r");
     }
     public void initialize(String input){
         if (findValid(input)==0){

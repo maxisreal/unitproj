@@ -6,17 +6,16 @@ public class RTDsetup {
     }
     public void start() {
         RTD instance = new RTD();
-        String confirm = "r";
         System.out.println("Welcome to the RTD program!");
         System.out.println("Press any random key on your keyboard");
         System.out.println("and the computer will do something!");
-        while (confirm.equals("r")) {
+        while (instance.findValid()) {
             System.out.println("It's RTD time!");
             System.out.print("Enter here: ");
             instance.initialize(scan.nextLine());
             System.out.println("PRESS R TO RESTART");
             System.out.print("PRESS ANYTHING ELSE TO END: ");
-            confirm = scan.nextLine().toLowerCase();
+            instance = new RTD(scan.nextLine().toLowerCase());
         }
         System.out.println("\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠄⢀⠂⠠⠐⡀⢀⠂⠀⠄⠀⡀⠀⠀⠂⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⡀⠄⠂⠌⠠⢁⠂⠌⠄⡈⠄⠀⠁⠀ ⠄⠀⠈⠐⠈⡐⠠⢁⠊⠄⡐⠠⠀⠂⠤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
