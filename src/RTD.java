@@ -94,9 +94,14 @@ public class RTD {
             System.out.println("This output is dedicated to Munim Ali,");
             System.out.println("because it's his favorite letter of the alphabet.");
             System.out.println("He told me.");
-        } else if (findValid(input)==5){
+            System.out.println("also his name starts with an m and i thought that was funny");
+        } else if (findValid(input)==4){
             System.out.println("It's time for egg delivery!");
             System.out.println("Can you deliver 60 eggs?");
+        } else if (findValid(input)==3){
+            System.out.println("now you fight dragon");
+            Dragon dragon = new Dragon();
+            dragon.dragonFight();
         }
     }
 }
