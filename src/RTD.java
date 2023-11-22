@@ -1,4 +1,6 @@
+import java.util.Scanner;
 public class RTD {
+    Scanner scan = new Scanner(System.in);
     private final String a;
     private final String confirm;
     public RTD() {
@@ -100,7 +102,8 @@ public class RTD {
             System.out.println("Can you deliver 60 eggs?");
         } else if (findValid(input)==3){
             System.out.println("now you fight dragon");
-            Dragon dragon = new Dragon();
+            System.out.print("Enter your attack power: ");
+            Dragon dragon = new Dragon(scan.nextInt());
             dragon.dragonFight();
         }
     }
