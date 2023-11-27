@@ -1,14 +1,30 @@
-import java.util.Scanner;
+/**
+ * This class makes you fight a dragon
+ *
+ * @author maxwilliamson
+ */
 public class Dragon {
+    /** if dragon is dead */
     private boolean isDead;
+    /** if u is dead */
     private boolean urDead;
+    /** dragon attack */
     private int atkdmg;
+    /** dragon level */
     private int lvl;
+    /** dragon health */
     private int hp;
+    /** dragon strength */
     private int power;
+    /** player health */
     private int myhp;
+    /** player attack */
     private int myatk;
-    Scanner scan = new Scanner(System.in);
+/**
+ * Instantiates a dragon.
+ *
+ * @param atk the attack
+ */
     public Dragon(int atk) {
         isDead = false;
         hp = atk*11;
@@ -19,6 +35,12 @@ public class Dragon {
         myhp = (int)(Math.pow(atk,2)*Math.random()*atk+1);
         myatk = atk;
     }
+    /**
+     * void method that keeps the fight going until someone dies
+     * <p>
+     * PRECONDITION: neither side is dead when the fight starts
+     *
+     */
     public void dragonFight() {
         state();
         while (!isDead&&!urDead) {
@@ -32,6 +54,11 @@ public class Dragon {
             System.out.println("----------------------------------------------");
         }
     }
+    /**
+     * private void method that damages the dragon and prints a death message if it's dead
+     *
+     * @param atkAmount atkamount
+     */
     private void takeDamage ( int atkAmount){
         if (!isDead) {
             hp -= atkAmount;
@@ -51,6 +78,10 @@ public class Dragon {
            System.out.println("The dragon is already dead!");
         }
     }
+    /**
+     * private int method that returns the dragon's attack and levels it up randomly
+     * @return dragon's attack damage
+     */
     private int attack() {
            if (!isDead){
                System.out.println("the dragon attacks for " + (power * lvl) + " hp");
@@ -77,6 +108,11 @@ public class Dragon {
                return 0;
            }
     }
+    /**
+     * private helper method that powers up the dragon if attack() outputs powerUp()
+     *
+     * @param pwr whether the hp or power of dragon should increase (1 or 2)
+     */
 
     private void powerUp ( int pwr){
         if (pwr == 1) {
@@ -88,6 +124,9 @@ public class Dragon {
             System.out.println("the dragon's strength is now " + power);
         }
     }
+    /**
+     * private helper method that prints the dragon and your stats
+     */
     private void state(){
         System.out.println("-----------------------");
         System.out.println("Dragon Health: " + hp);
