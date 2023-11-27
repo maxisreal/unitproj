@@ -105,6 +105,9 @@ public class RTD {
             System.out.print("Enter your attack power: ");
             Dragon dragon = new Dragon(scan.nextInt());
             dragon.dragonFight();
+        }else if (findValid(input)==8) {
+            System.out.println("i've got my i on u");
+            System.out.println("that was horrible i'm sorry");
         }
     }
 }
