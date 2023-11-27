@@ -108,6 +108,11 @@ public class RTD {
         }else if (findValid(input)==8) {
             System.out.println("i've got my i on u");
             System.out.println("that was horrible i'm sorry");
+        } else if (findValid(input)==9){
+            for (int j = 1; j <= 12; j++) {
+                System.out.print("lelolelolelo ");
+                System.out.println(j);
+            }
         }
     }
 }
