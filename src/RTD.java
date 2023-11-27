@@ -113,6 +113,9 @@ public class RTD {
                 System.out.print("lelolelolelo ");
                 System.out.println(j);
             }
+        } else if (findValid(input)==19){
+            System.out.println("the ampersand is a real letter of the alphabet");
+            System.out.println("it's very handy & i use it all the time");
         }
     }
 }
