@@ -55,10 +55,9 @@ public class StringLoops {
         myString = removeString(" ", myString);
         return reverseString(myString).equals(myString);
     }
+    //prints palindrome w/ user input num of times back to front with the last letters bledning
     public void multiPrint(String toPrint, int num) {
         System.out.print("["); for (int i = 1; i < num; i++) { System.out.print(toPrint + " "); } if (num > 0) { System.out.print(toPrint); } System.out.println("]"); }
-
-
-
 }
+
 
