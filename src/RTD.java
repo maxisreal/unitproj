@@ -98,8 +98,14 @@ public class RTD {
             System.out.println("He told me.");
             System.out.println("also his name starts with an m and i thought that was funny");
         } else if (findValid(input)==4){
-            System.out.println("It's time for egg delivery!");
-            System.out.println("Can you deliver 60 eggs?");
+            StringLoops str = new StringLoops();
+            System.out.println("Enter a palindrome: ");
+            while (!str.isPalindrome(scan.nextLine())){
+                System.out.println("No, a palindrome: ");
+            }
+            System.out.println("nice");
+            System.out.print("now put how many times it prints: ");
+            str.multiPrint(scan.nextLine);
         } else if (findValid(input)==3){
             System.out.println("now you fight dragon");
             System.out.print("Enter your attack power: ");
