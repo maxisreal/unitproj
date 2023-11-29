@@ -97,15 +97,21 @@ public class RTD {
             System.out.println("because it's his favorite letter of the alphabet.");
             System.out.println("He told me.");
             System.out.println("also his name starts with an m and i thought that was funny");
-        } else if (findValid(input)==4){
+        } else if (findValid(input)==4) {
             StringLoops str = new StringLoops();
-            System.out.println("Enter a palindrome: ");
-            while (!str.isPalindrome(scan.nextLine())){
-                System.out.println("No, a palindrome: ");
+            String palin = "";
+            System.out.print("Enter a palindrome: ");
+            palin = scan.nextLine();
+            while (!str.isPalindrome(palin)) {
+                scan.nextLine();
+                System.out.print("No, a palindrome: ");
+                palin = scan.nextLine();
+                scan.nextLine();
             }
             System.out.println("nice");
             System.out.print("now put how many times it prints: ");
-            str.multiPrint(scan.nextLine);
+            str.multiPrint(palin, scan.nextInt());
+
         } else if (findValid(input)==3){
             System.out.println("now you fight dragon");
             System.out.print("Enter your attack power: ");

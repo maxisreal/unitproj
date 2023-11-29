@@ -57,7 +57,17 @@ public class StringLoops {
     }
     //prints palindrome w/ user input num of times back to front with the last letters bledning
     public void multiPrint(String toPrint, int num) {
-        System.out.print("["); for (int i = 1; i < num; i++) { System.out.print(toPrint + " "); } if (num > 0) { System.out.print(toPrint); } System.out.println("]"); }
+        System.out.print("[");
+        String orig = toPrint.substring(0, 1);
+        if (num>1||toPrint.length()>1) {
+            toPrint = reverseString(toPrint.substring(1));
+
+        }
+        for (int i = 1; i < num; i++) {
+            System.out.print(toPrint);
+        }
+        System.out.println(orig + "]");
+    }
 }
 
 
