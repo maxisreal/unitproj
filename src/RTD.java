@@ -99,9 +99,8 @@ public class RTD {
             System.out.println("also his name starts with an m and i thought that was funny");
         } else if (findValid(input)==4) {
             StringLoops str = new StringLoops();
-            String palin = "";
             System.out.print("Enter a palindrome: ");
-            palin = scan.nextLine();
+            String palin = scan.nextLine();
             while (!str.isPalindrome(palin)) {
                 System.out.print("No, a palindrome: ");
                 palin = scan.nextLine();
