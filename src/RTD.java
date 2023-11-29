@@ -103,7 +103,6 @@ public class RTD {
             System.out.print("Enter a palindrome: ");
             palin = scan.nextLine();
             while (!str.isPalindrome(palin)) {
-                scan.nextLine();
                 System.out.print("No, a palindrome: ");
                 palin = scan.nextLine();
                 scan.nextLine();
