@@ -181,11 +181,21 @@ public class RTD {
         if (findValid(input) == 20) {
             System.out.println("terrible terry ties his toes");
         }
+
+        if (findValid(input) == 21) {
+            System.out.println(a);
+        }
+        if (findValid(input) == 22) {
+            System.out.println("isnt it weird we call w a double u but it's a double v");
+        }
         if (findValid(input) == 23) {
             System.out.println("W");
         }
         if (findValid(input) == 24) {
             System.out.println("xdddd");
+        }
+        if (findValid(input) == 24) {
+            System.out.println("ymca");
         }
         if (findValid(input) == 26) {
             for (int i = 1; i < a.length(); i++) {
