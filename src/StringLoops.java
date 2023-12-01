@@ -62,10 +62,13 @@ public class StringLoops {
         if (num>1&&toPrint.length()>1) {
             toPrint = reverseString(toPrint.substring(1));
         }
-        for (int i = 1; i < num; i++) {
+        for (int i = 1; i <= num; i++) {
             System.out.print(toPrint);
         }
-        System.out.println(orig + "]");
+        if (num>1&&toPrint.length()>1) {
+            System.out.print(orig);
+        }
+        System.out.println("]");
     }
 }
 
