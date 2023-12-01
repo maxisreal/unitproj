@@ -20,7 +20,7 @@ public class RTD {
         if (a.contains(input)) {
             return a.indexOf(input) + 1;
         } else {
-            return (int) (Math.random() * a.length() + 1);
+            return (int) (Math.random() * 26+1);
         }
     }
 
@@ -194,7 +194,7 @@ public class RTD {
         if (findValid(input) == 24) {
             System.out.println("xdddd");
         }
-        if (findValid(input) == 24) {
+        if (findValid(input) == 25) {
             System.out.println("ymca");
         }
         if (findValid(input) == 26) {
